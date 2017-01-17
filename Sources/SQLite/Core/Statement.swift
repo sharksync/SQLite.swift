@@ -26,6 +26,8 @@
 import sqlite3
 #elseif SQLITE_SWIFT_SQLCIPHER
 import SQLCipher
+#elseif os(Linux)
+import CSQLiteLinux
 #else
 import CSQLite
 #endif
